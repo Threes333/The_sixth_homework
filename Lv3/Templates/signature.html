@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>设置个性签名</title>
+</head>
+<body>
+<form action="/SetSignature?id={{.username}}" method="post">
+    <label>
+        <input type="text" name="signature">
+    </label>
+    <input type="submit" value="提交">
+</form>
+<div>
+    {{.sign}}
+</div>
+<form action="/joined/{{.username}}" method="post">
+    <input type="submit" value="返回主页">
+</form>
+</body>
+</html>

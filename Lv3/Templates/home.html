@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.user}}的个人主页</title>
+</head>
+<body>
+<span>
+    <a href="/SetPassword"> 更改密码</a>
+    <a href="/login"> 退出登录</a>
+</span>
+{{/*<form action="/search" method="post">
+    <label>
+        <input type="text" name="user">
+    </label>
+    <input type="submit" value="搜索用户">
+</form>*/}}
+<div>
+    <p>个性签名:</p>
+</div>
+{{.signature}}
+<div>
+    <a href="/SetSignature?id={{.username}}">设置个性签名</a>
+</div>
+</body>
+</html>
